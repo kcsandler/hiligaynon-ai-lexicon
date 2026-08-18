@@ -1,0 +1,72 @@
+[
+  {
+    "id": "waist",
+    "query": "the part of the body where a belt sits",
+    "relevant_lemmas": ["abayan"]
+  },
+  {
+    "id": "window",
+    "query": "an opening in a wall that lets in light and air",
+    "relevant_lemmas": ["abang", "bentana", "gawahan"]
+  },
+  {
+    "id": "grey",
+    "query": "the color between black and white",
+    "relevant_lemmas": ["abohon", "ba-og", "abo-abohon"]
+  },
+  {
+    "id": "broad-shouldered",
+    "query": "a person with wide shoulders",
+    "relevant_lemmas": ["abaganhan"]
+  },
+  {
+    "id": "lazy",
+    "query": "unwilling to work",
+    "relevant_lemmas": ["agdayan", "maagol"]
+  },
+  {
+    "id": "crown",
+    "query": "the top of the skull",
+    "relevant_lemmas": ["abong"]
+  },
+  {
+    "id": "worried",
+    "query": "feeling anxious and upset",
+    "relevant_lemmas": ["aborido"]
+  },
+  {
+    "id": "open",
+    "query": "not shut or closed",
+    "relevant_lemmas": ["abyerto"]
+  },
+  {
+    "id": "friendly",
+    "query": "sociable and kind toward other people",
+    "relevant_lemmas": ["ablaw"]
+  },
+  {
+    "id": "ashen",
+    "query": "the color of ash",
+    "relevant_lemmas": ["abo-abo", "abo-abohon"]
+  },
+  {
+    "id": "rice",
+    "query": "milled white rice",
+    "relevant_lemmas": ["bugas"]
+  },
+  {
+    "id": "sleep",
+    "query": "to sleep",
+    "relevant_lemmas": ["tulug"]
+  },
+  {
+    "id": "house",
+    "query": "a house or home",
+    "relevant_lemmas": ["balay"]
+  },
+  {
+    "id": "rainbow",
+    "query": "a rainbow in the sky",
+    "relevant_lemmas": ["balangaw"]
+  }
+]

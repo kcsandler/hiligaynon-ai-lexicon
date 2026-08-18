@@ -1,0 +1,228 @@
+{
+  "notes": "Hand-labeled English paraphrase queries against Wiktionary glosses. This is not a published benchmark.",
+  "metrics": {
+    "queries": 14,
+    "mrr": 0.6488,
+    "recall_at_1": 0.5714,
+    "recall_at_5": 0.7857,
+    "recall_at_10": 0.7857
+  },
+  "queries": [
+    {
+      "id": "waist",
+      "query": "the part of the body where a belt sits",
+      "relevant_lemmas": [
+        "abayan"
+      ],
+      "rank": null,
+      "top_lemmas": [
+        "bulutangan",
+        "bola",
+        "gutok",
+        "baliskag",
+        "busal"
+      ]
+    },
+    {
+      "id": "window",
+      "query": "an opening in a wall that lets in light and air",
+      "relevant_lemmas": [
+        "abang",
+        "bentana",
+        "gawahan"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "abang",
+        "abang",
+        "banaag",
+        "bentana",
+        "buksan"
+      ]
+    },
+    {
+      "id": "grey",
+      "query": "the color between black and white",
+      "relevant_lemmas": [
+        "abo-abohon",
+        "abohon",
+        "ba-og"
+      ],
+      "rank": 3,
+      "top_lemmas": [
+        "itom",
+        "itom",
+        "abohon",
+        "maitum",
+        "ba-og"
+      ]
+    },
+    {
+      "id": "broad-shouldered",
+      "query": "a person with wide shoulders",
+      "relevant_lemmas": [
+        "abaganhan"
+      ],
+      "rank": null,
+      "top_lemmas": [
+        "abaga",
+        "abaga",
+        "bakud",
+        "buhat",
+        "buhat"
+      ]
+    },
+    {
+      "id": "lazy",
+      "query": "unwilling to work",
+      "relevant_lemmas": [
+        "agdayan",
+        "maagol"
+      ],
+      "rank": null,
+      "top_lemmas": [
+        "balibad",
+        "balasubas",
+        "dumili",
+        "kaulangan",
+        "dapat"
+      ]
+    },
+    {
+      "id": "crown",
+      "query": "the top of the skull",
+      "relevant_lemmas": [
+        "abong"
+      ],
+      "rank": 2,
+      "top_lemmas": [
+        "agtang",
+        "abong",
+        "adtang",
+        "utak",
+        "utok"
+      ]
+    },
+    {
+      "id": "worried",
+      "query": "feeling anxious and upset",
+      "relevant_lemmas": [
+        "aborido"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "aborido",
+        "balatian",
+        "balatian",
+        "abongho",
+        "hadlok"
+      ]
+    },
+    {
+      "id": "open",
+      "query": "not shut or closed",
+      "relevant_lemmas": [
+        "abyerto"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "abyerto",
+        "alabri",
+        "basi",
+        "basi",
+        "buk-on"
+      ]
+    },
+    {
+      "id": "friendly",
+      "query": "sociable and kind toward other people",
+      "relevant_lemmas": [
+        "ablaw"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "ablaw",
+        "ablaw",
+        "batasan",
+        "giyan",
+        "maanyag"
+      ]
+    },
+    {
+      "id": "ashen",
+      "query": "the color of ash",
+      "relevant_lemmas": [
+        "abo-abo",
+        "abo-abohon"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "abo-abo",
+        "abo-abo",
+        "abo-abohon",
+        "abohon",
+        "buling"
+      ]
+    },
+    {
+      "id": "rice",
+      "query": "milled white rice",
+      "relevant_lemmas": [
+        "bugas"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "bugas",
+        "bugas",
+        "ramay",
+        "kalan-on",
+        "kan-on"
+      ]
+    },
+    {
+      "id": "sleep",
+      "query": "to sleep",
+      "relevant_lemmas": [
+        "tulug"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "tulug",
+        "tulug",
+        "dulog",
+        "damgo",
+        "kaagahon"
+      ]
+    },
+    {
+      "id": "house",
+      "query": "a house or home",
+      "relevant_lemmas": [
+        "balay"
+      ],
+      "rank": 4,
+      "top_lemmas": [
+        "balaynon",
+        "asunto",
+        "asunto",
+        "balay",
+        "kamalig"
+      ]
+    },
+    {
+      "id": "rainbow",
+      "query": "a rainbow in the sky",
+      "relevant_lemmas": [
+        "balangaw"
+      ],
+      "rank": 1,
+      "top_lemmas": [
+        "balangaw",
+        "katulundan",
+        "langit",
+        "bulador",
+        "kilat"
+      ]
+    }
+  ]
+}

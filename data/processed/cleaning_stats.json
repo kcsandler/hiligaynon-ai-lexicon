@@ -1,0 +1,16 @@
+{
+  "input_rows": 1987,
+  "output_rows": 1933,
+  "unique_lemmas": 1673,
+  "dropped_duplicate": 8,
+  "dropped_empty_gloss": 4,
+  "dropped_iso_homograph": 42,
+  "pos_counts": {
+    "adjective": 316,
+    "determiner": 15,
+    "phrase": 54,
+    "noun": 1162,
+    "pronoun": 12,
+    "verb": 374
+  }
+}

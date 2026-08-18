@@ -12,13 +12,16 @@ license = { text = "MIT" }
 authors = [{ name = "Kurshan Craig Sandler L. Casilen" }]
 dependencies = [
     "pandas>=2.2",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0"]
+dev = ["pytest>=8.0", "httpx>=0.27"]
 
 [project.scripts]
 hiligaynon-clean = "hiligaynon_lexicon.clean:main"
+hiligaynon-db = "hiligaynon_lexicon.db:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

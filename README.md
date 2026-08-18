@@ -10,6 +10,8 @@ Implemented:
 
 - Wiktionary extract ingestion
 - Cleaning, POS normalization, gloss cleanup, deduplication
+- SQLite store with FTS5 full-text search
+- FastAPI lookup, search, and stats endpoints
 - Documented source licenses and dataset limits
 
 Latest cleaning run on the bundled extract:
@@ -27,7 +29,6 @@ POS after cleaning: noun 1,162 · verb 374 · adjective 316 · phrase 54 · dete
 
 Not in this milestone yet:
 
-- SQLite + FastAPI
 - Embeddings / FAISS semantic search
 - Wikipedia frequency counts
 - Affix heuristics
@@ -38,6 +39,14 @@ Hiligaynon has far less NLP tooling than English or Filipino. Dictionary pages e
 
 This project turns a CC BY-SA Wiktionary extract into a reproducible, inspectable lexicon.
 
+```mermaid
+flowchart LR
+  A[Wiktionary CSV] --> B[Cleaning pipeline]
+  B --> C[Processed CSV]
+  C --> D[SQLite + FTS5]
+  D --> E[FastAPI lookup and search]
+```
+
 ## Features
 
 - Drop category index rows and ISO-code homograph pages
@@ -45,6 +54,9 @@ This project turns a CC BY-SA Wiktionary extract into a reproducible, inspectabl
 - Clean glosses (collapse whitespace, cut synonym/citation tails)
 - Deduplicate `(lemma, POS, gloss)`
 - Write processed CSV plus a JSON stats report
+- Load the cleaned lexicon into SQLite
+- Exact lemma lookup and FTS5 search over lemmas and English glosses
+- REST API with `/lookup`, `/search`, `/stats`, and `/health`
 
 ## Data sources
 
@@ -76,7 +88,19 @@ pip install -e ".[dev]"
 
 ```bash
 python -m hiligaynon_lexicon.clean --input data/raw/wiktionary_hiligaynon.csv --output-dir data/processed
+python -m hiligaynon_lexicon.db --input data/processed/lexicon.csv --output data/processed/lexicon.sqlite
+uvicorn hiligaynon_lexicon.api:app --reload
 ```
+
+Then open http://127.0.0.1:8000/docs
+
+```bash
+curl "http://127.0.0.1:8000/lookup?lemma=abang"
+curl "http://127.0.0.1:8000/search?q=window"
+curl "http://127.0.0.1:8000/stats"
+```
+
+`/lookup` is exact (case-insensitive). `/search` uses SQLite FTS5 over lemma and gloss, with an optional `pos` filter.
 
 ```bash
 pytest
@@ -85,10 +109,10 @@ pytest
 ## Project structure
 
 ```text
-src/hiligaynon_lexicon/   cleaning and (later) API code
+src/hiligaynon_lexicon/   cleaning, SQLite, and API code
 data/raw/                 Wiktionary extract
-data/processed/           cleaned lexicon + stats
-tests/                    unit tests
+data/processed/           cleaned CSV, stats, and SQLite database
+tests/                    unit and API tests
 ```
 
 ## License
